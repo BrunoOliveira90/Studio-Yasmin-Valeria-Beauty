@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maquiadora Profissional</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      text-align: center;
+      padding: 50px 0;
+      background: #FADADD;
+    }
+    .description {
+      padding: 30px 15px;
+      background: #ffebee;
+      text-align: center;
+    }
+    .map {
+      padding: 30px 0;
+    }
+    .gallery {
+      padding: 30px 0;
+      background: #ffebee;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+    .footer {
+      background: #FADADD;
+      color: rgb(0, 0, 0);
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Maquiadora Profissional</h1>
+    <p>Transformando beleza em arte</p>
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <h2>Sobre Mim</h2>
+    <p>Sou uma maquiadora profissional com anos de experiência no mercado. Minha missão é realçar a beleza única de cada pessoa através da maquiagem.</p>
+  </div>
+
+  <!-- Map -->
+  <div class="map container">
+    <h2>Localização</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7202.6899174098835!2d-54.5416675659042!3d-25.493539495830795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690a629b56597%3A0x8d6b6acee2e46528!2sStudio%20Yasmin%20Val%C3%A9ria%20Beauty!5e0!3m2!1spt-BR!2sbr!4v1722634620956!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery container">
+    <h2>Trabalhos Recentes</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMEirsrk8DW9SswSK2S0nZZfZ4dfX6NCMdrfKKR=s680-w680-h510" alt="Trabalho 1">
+        <p>Trabalho 1</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMdl2mKqOsPVPh5ON4QHJaDl67GiPWZgPq8Nr5U=s680-w680-h510" alt="Trabalho 2">
+        <p>Trabalho 2</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPhb5sHuaXseWNelLBRt7ZC8IVpRqyLEkyqHnLI=s680-w680-h510" alt="Trabalho 3">
+        <p>Trabalho 3</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Contato: <i class="fas fa-phone"></i> (45) 99811-3193 | <i class="fas fa-envelope"></i> <a href="https://api.whatsapp.com/send/?phone=5545998113193&text=Ol%C3%A1%20Yasmin%2C%20gostaria%20de%20marcar%20um%20hor%C3%A1rio!" target="_blank">WhatsApp</a></p>
+    <p>© 2024 Maquiadora Profissional. Todos os direitos reservados.</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function initMap() {
+      var location = {lat: -25.344, lng: 131.036};
+      var map = new google.maps.Map(document.getElementById('googleMap'), {
+        zoom: 4,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
