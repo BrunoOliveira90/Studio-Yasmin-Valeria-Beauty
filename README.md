@@ -6,7 +6,9 @@ Google Maps Api added. WhatsApp Api link added.
 
 NavBar, CSS & Bootstrap will be added.
 
-Cicle images.
+Carousel with jobs added.
+
+>>> Improve Navbar, Title, About. Locals needs to go below jobs. Separate columns on footer, change color theme. Please make styles separated from index.
 
 Link: https://brunooliveira90.github.io/Studio-Yasmin-Valeria-Beauty/
 
